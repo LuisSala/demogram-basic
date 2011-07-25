@@ -1,5 +1,5 @@
 {
-  "name": "demogram2",
+  "name": "demogram",
   "bpm": "1.0.0",
   "bpm:build": {
     "bpm_libs.js": {
@@ -13,13 +13,13 @@
 
       ]
     },
-    "demogram2/bpm_libs.js": {
+    "demogram/bpm_libs.js": {
       "directories": [
         "app"
       ],
       "minifier": "uglify-js"
     },
-    "demogram2/bpm_styles.css": {
+    "demogram/bpm_styles.css": {
       "directories": [
         "css"
       ]

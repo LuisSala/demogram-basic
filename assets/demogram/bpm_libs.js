@@ -1,8 +1,5 @@
 /* ===========================================================================
    BPM Combined Asset File
-   MANIFEST: demogram2 ()
+   MANIFEST: demogram ()
    This file is generated automatically by the bpm (http://www.bpmjs.org)    
    =========================================================================*/
-
-/* TODO: Add your app CSS here */
-
