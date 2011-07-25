@@ -1,0 +1,32 @@
+{
+  "name": "demogram2",
+  "bpm": "1.0.0",
+  "bpm:build": {
+    "bpm_libs.js": {
+      "directories": [
+
+      ],
+      "minifier": "uglify-js"
+    },
+    "bpm_styles.css": {
+      "directories": [
+
+      ]
+    },
+    "demogram2/bpm_libs.js": {
+      "directories": [
+        "app"
+      ],
+      "minifier": "uglify-js"
+    },
+    "demogram2/bpm_styles.css": {
+      "directories": [
+        "css"
+      ]
+    }
+  },
+  "dependencies": {
+    "sproutcore": ">= 0",
+    "sproutcore-touch": ">= 0"
+  }
+}

@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="assets/bpm_styles.css" type="text/css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="assets/demogram2/bpm_styles.css" type="text/css" media="screen" charset="utf-8" />
+  <meta name = "viewport" content = "initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width, target-densityDpi=device-dpi">
+    <title>demogram2</title>
+  </head>
+  <body>
+	  <script type="text/html" data-view="App.MainView">
+
+	  {{#collection contentBinding="App.mediaController" class="dashboard" itemClass="dashboard-item"}}
+		{{#view App.MediaItemView content=content}}
+	      <img class="dashboard-photo" {{bindAttr src="parentView.content.images.standard_resolution.url"}}>
+
+	      <div class="dashboard-details">
+	        <img class="dashboard-profile-picture" {{bindAttr src="content.user.profile_picture"}}>
+	          <div class="dashboard-profile-username">{{content.user.username}}</div>
+	      </div>
+		{{/view}}
+	  {{/collection}}
+
+	  </script>
+	
+	<script type="text/html" data-template-name="photo-details">
+		
+		{{#view App.PinchableView class="photo-details-image-container" content=content}}
+		<img class="photo-details-image" {{bindAttr src="content.images.standard_resolution.url"}}>
+		{{/view}}
+		
+		<div class="photo-details-data">
+			<div class="photo-details-user">
+				<img class="photo-details-user-profile-picture" {{bindAttr src="content.caption.from.profile_picture"}}>
+				<div class="photo-details-user-profile-username">{{content.user.username}}</div>
+			</div>
+			
+			{{#collection contentBinding="App.mediaController.comments" class="photo-details-comments" itemClass="photo-details-comment-item"}}
+				<strong>{{content.from.username}}:</strong> {{content.text}}
+			{{/collection}}
+			
+			{{#view App.CloseDetailsButton}}
+		      Close
+		    {{/view}}
+		</div>
+	</script>
+  </body>
+
+  <script type="text/javascript" src="assets/bpm_libs.js"></script>
+  <script type="text/javascript" src="assets/demogram2/bpm_libs.js"></script>
+</html>
