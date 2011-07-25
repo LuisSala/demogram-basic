@@ -160,11 +160,27 @@ App.CloseDetailsButton = SC.View.extend({
 });
 
 App.PinchableView = SC.View.extend({
-	pinchChange: function(recognizer, scale) {
-        this.$().css("-webkit-transform", "scale3d("+scale+","+scale+", 1010)");
-	} /*,
-	panChange: function(recognizer, current) {
-		this.$().css("-webkit-transform", "translate3d("+current.x+"px,"+ current.y+"px, 1010)");
-	}
-	*/
+  scale: 1,
+
+  translate: {
+    x: 0,
+    y: 0
+  },
+
+  pinchChange: function(recognizer, scale) {
+    this.scale = scale;
+    this._applyTransforms();
+  },
+
+  panChange: function(recognizer, translation) {
+    this.translate = translation;
+    this._applyTransforms();
+  },
+
+  _applyTransforms: function() {
+    var string = 'translate3d('+this.translate.x+'px,'+this.translate.y+'px,0)';
+        string += ' scale3d('+this.scale+','+this.scale+',1)';
+
+    this.$().css('-webkit-transform',string);
+  }
 });
