@@ -243,8 +243,8 @@ body {
     height: auto;
   }
 
-  .photo-details-image {
-	width: 95%;
+  .photo-details-image-container {
+	width: 100%;
   }
 
   .photo-details-data {
@@ -261,8 +261,8 @@ body {
     height: auto;
   }
 
-  .photo-details-image {
-	width: 90%;
+  .photo-details-image-container {
+	width: 100%;
   }
 
   .photo-details-data {
