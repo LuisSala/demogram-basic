@@ -24,7 +24,8 @@ App.Image = SC.Record.extend({
 });
 
 App.ImageCollection = SC.Record.extend({
-     standard_resolution: SC.Record.toOne('App.Image', {nested: true})
+     standard_resolution: SC.Record.toOne('App.Image', {nested: true}),
+	 low_resolution: SC.Record.toOne('App.Image', {nested: true})
 });
 
 App.MediaRecord = SC.Record.extend({

@@ -10,7 +10,7 @@
 
 	  {{#collection contentBinding="App.mediaController" class="dashboard" itemClass="dashboard-item"}}
 		{{#view App.MediaItemView content=content}}
-	      <img class="dashboard-photo" {{bindAttr src="parentView.content.images.standard_resolution.url"}}>
+	      <img class="dashboard-photo" {{bindAttr src="parentView.content.images.low_resolution.url"}}>
 
 	      <div class="dashboard-details">
 	        <img class="dashboard-profile-picture" {{bindAttr src="content.user.profile_picture"}}>
