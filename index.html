@@ -1,7 +1,6 @@
 <html>
   <head>
     <link rel="stylesheet" href="assets/bpm_styles.css" type="text/css" media="screen" charset="utf-8" />
-    <link rel="stylesheet" href="assets/demogram/bpm_styles.css" type="text/css" media="screen" charset="utf-8" />
   <meta name = "viewport" content = "initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width, target-densityDpi=device-dpi">
     <title>demogram</title>
   </head>
@@ -36,14 +35,13 @@
 			{{#collection contentBinding="App.mediaController.comments" class="photo-details-comments" itemClass="photo-details-comment-item"}}
 				<strong>{{content.from.username}}:</strong> {{content.text}}
 			{{/collection}}
-			
-			{{#view App.CloseDetailsButton}}
-		      Close
-		    {{/view}}
+	
 		</div>
+		{{#view App.CloseDetailsButton}}
+	      Close
+	    {{/view}}
 	</script>
   </body>
 
   <script type="text/javascript" src="assets/bpm_libs.js"></script>
-  <script type="text/javascript" src="assets/demogram/bpm_libs.js"></script>
 </html>

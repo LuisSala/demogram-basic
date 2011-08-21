@@ -4,29 +4,20 @@
   "bpm:build": {
     "bpm_libs.js": {
       "directories": [
-
+        "lib"
       ],
       "minifier": "uglify-js"
     },
     "bpm_styles.css": {
-      "directories": [
-
-      ]
-    },
-    "demogram/bpm_libs.js": {
-      "directories": [
-        "app"
-      ],
-      "minifier": "uglify-js"
-    },
-    "demogram/bpm_styles.css": {
       "directories": [
         "css"
       ]
     }
   },
   "dependencies": {
-    "sproutcore": ">= 0",
-    "sproutcore-touch": ">= 0"
+    "sproutcore": ">= 0-pre",
+    "sproutcore-touch": "2.0.beta.2",
+    "sproutcore-datastore": ">= 0-pre",
+    "TransformJS": ">= 0-pre"
   }
 }
