@@ -19,9 +19,9 @@ BPM - http://getbpm.org or http://sproutcutter.heroku.com
 
 ### Configure:
 
-Obtain a Client ID from http://instagram.com/developer and add the Client ID to app/main.js
+Obtain a Client ID from http://instagram.com/developer then copy lib/config.sample.js to config.js and edit config.js to insert your Client ID.
 
-	App.INSTAGRAM_CLIENT_ID="CLIENT ID GOES HERE"
+	CONFIG.INSTAGRAM_CLIENT_ID="CLIENT ID GOES HERE"
 
 ### Run:	
 From your project directory run:
