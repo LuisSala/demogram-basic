@@ -1,4 +1,5 @@
 .strobe
+strobe
 .idea
 .bpm
 lib/config.js
